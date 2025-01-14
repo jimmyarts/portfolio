@@ -23,7 +23,8 @@
             }
 
             .logo img {
-                max-width: 604px;
+                width: 80vw; /* Tamanho dinâmico baseado em 20% da largura da janela */
+                max-width: 1200px; /* Tamanho máximo para evitar que fique grande demais */
                 height: auto;
             }
 
@@ -33,6 +34,25 @@
                 margin-top: 20px;
             }
         </style>
+        <script>
+            window.addEventListener("resize", () => {
+                const logo = document.querySelector(".logo img");
+                const minWidth = 150; // Tamanho mínimo em pixels
+                const maxWidth = 1200; // Tamanho máximo em pixels
+
+                // Calcula o tamanho em função da largura da janela
+                let newWidth = window.innerWidth * 0.8; // 20% da largura da janela
+                newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
+
+                logo.style.width = `${newWidth}px`;
+            });
+
+            // Ajusta o tamanho logo no carregamento da página
+            window.addEventListener("load", () => {
+                const event = new Event("resize");
+                window.dispatchEvent(event);
+            });
+        </script>
     </head>
     <body>
         <div class="logo">
