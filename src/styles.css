@@ -1,0 +1,78 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("bg-photo.jpg") no-repeat center center fixed
+        rgba(0, 0, 0, 0.116);
+    background-size: cover;
+    background-blend-mode: overlay;
+    font-family: "Martian Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: white;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background: transparent;
+    font-size: 0.7rem;
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 80vw; /* Tamanho dinâmico baseado na largura da janela */
+    max-width: 1600px; /* Tamanho máximo para evitar que fique grande demais */
+    height: auto;
+}
+
+.bordaembaixo {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+.bordaembaixotracejada {
+    border-bottom: 3px dashed white;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header,
+    footer {
+        font-size: 0.9rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a,
+    footer a {
+        margin-top: 5px;
+    }
+}

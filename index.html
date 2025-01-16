@@ -5,59 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jimmyarts</title>
         <link rel="icon" type="image/svg" href="src/favicon.svg" />
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                background: url("src/bg-photo.jpg") no-repeat center center
-                    fixed;
-                background-size: cover;
-                font-family: Arial, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-
-            .logo {
-                text-align: center;
-            }
-
-            .logo img {
-                width: 80vw; /* Tamanho dinâmico baseado na largura da janela */
-                max-width: 1240px; /* Tamanho máximo para evitar que fique grande demais */
-                height: auto;
-            }
-
-            .logo h1 {
-                color: white;
-                font-size: 2rem;
-                margin-top: 20px;
-            }
-        </style>
-        <script>
-            window.addEventListener("resize", () => {
-                const logo = document.querySelector(".logo img");
-                const minWidth = 150; // Tamanho mínimo em pixels
-                const maxWidth = 1200; // Tamanho máximo em pixels
-
-                // Calcula o tamanho em função da largura da janela
-                let newWidth = window.innerWidth * 0.8; // 20% da largura da janela
-                newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
-
-                logo.style.width = `${newWidth}px`;
-            });
-
-            // Ajusta o tamanho logo no carregamento da página
-            window.addEventListener("load", () => {
-                const event = new Event("resize");
-                window.dispatchEvent(event);
-            });
-        </script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="src/styles.css" />
     </head>
     <body>
+        <header>
+            <div>> Portfólio em construção...</div>
+            <a
+                href="https://instagram.com/jimmyarts"
+                target="_blank"
+                class="bordaembaixo"
+                >@instagram</a
+            >
+        </header>
+
         <div class="logo">
             <img src="src/jimmy-logo.svg" alt="Logo" />
         </div>
+
+        <footer>
+            <div class="bordaembaixotracejada">jimmy.art.br</div>
+            <a href="mailto:jimmyarts@gmail.com" class="bordaembaixo"
+                >jimmyarts@gmail.com</a
+            >
+        </footer>
     </body>
 </html>
