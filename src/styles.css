@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background: #293d2d;
+}
+
 body {
     background: url("bg-photo.jpg") no-repeat center center fixed
         rgba(0, 0, 0, 0.116);
@@ -75,7 +79,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
     body {
-        background: #283b2a;
+        background: #293d2d;
         font-family: "Martian Mono", monospace;
         display: flex;
         flex-direction: column;
