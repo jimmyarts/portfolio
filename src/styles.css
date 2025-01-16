@@ -81,7 +81,7 @@ footer a:hover {
         flex-direction: column;
         justify-content: space-between;
         color: white;
-        height: auto;
+        height: 100%;
     }
     header,
     footer {
