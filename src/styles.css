@@ -66,9 +66,8 @@ footer a:hover {
 @media (max-width: 768px) {
     header,
     footer {
-        font-size: 0.9rem;
-        flex-direction: column;
-        text-align: center;
+        font-size: 0.5rem;
+        padding: 30px 20px;
     }
 
     header a,
