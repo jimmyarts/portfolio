@@ -37,7 +37,8 @@ footer a {
 
 header a:hover,
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #caffab;
 }
 
 .logo {
@@ -59,23 +60,28 @@ footer a:hover {
 }
 
 .bordaembaixotracejada {
-    border-bottom: 3px dashed white;
-    padding-bottom: 10px;
+    border-bottom: 0px dashed white;
+    padding: 10px 30px;
+    /* background: #000000; */
+    border: solid 2px #ebd0987d;
+    border-radius: 100%;
+}
+
+.caracter-especial {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 0;
 }
 
 @media (max-width: 768px) {
     body {
-        background: url("bg-photo.jpg") no-repeat center center fixed;
-        background-size: cover;
-        background-blend-mode: normal;
+        background: #283b2a;
         font-family: "Martian Mono", monospace;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 90vh;
         color: white;
     }
-
     header,
     footer {
         font-size: 0.5rem;
@@ -85,5 +91,10 @@ footer a:hover {
     header a,
     footer a {
         margin-top: 5px;
+    }
+    .logo {
+        background: url(bg-photo.jpg) no-repeat center center fixed
+            rgba(0, 0, 0, 0.116);
+        background-size: cover;
     }
 }
