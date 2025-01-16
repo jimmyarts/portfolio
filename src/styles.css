@@ -45,6 +45,11 @@ footer a:hover {
     color: #caffab;
 }
 
+.construcao {
+    border-left: solid 3px white;
+    padding-left: 20px;
+}
+
 .logo {
     display: flex;
     justify-content: center;
