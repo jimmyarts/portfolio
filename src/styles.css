@@ -64,6 +64,18 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: url("bg-photo.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-blend-mode: normal;
+        font-family: "Martian Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        color: white;
+    }
+
     header,
     footer {
         font-size: 0.5rem;
