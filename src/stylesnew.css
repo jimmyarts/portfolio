@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background: url("bg-photo.jpg") no-repeat center center fixed;
+    /* background: url("bg-photo.jpg") no-repeat center center fixed; */
     background-size: cover;
     background-color: #293d2d;
     font-family: "Azeret Mono", monospace;
