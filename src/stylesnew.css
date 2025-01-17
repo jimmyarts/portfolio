@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("bg-photo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #293d2d;
+    font-family: "Azeret Mono", monospace;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+}
+.main div {
+    width: 30%;
+    height: 80%;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; /* Alinhamento horizontal */
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+}
+.logo img {
+    width: 40vw; /* Tamanho dinâmico baseado na largura da janela */
+    max-width: 1600px; /* Tamanho máximo para evitar que fique grande demais */
+    height: auto;
+}
+
+.main div a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.textohorizontal {
+    rotate: 270deg;
+    color: #e3d5d2;
+    font-size: 0.9rem;
+}
+
+.instagram-icone {
+    padding-top: 90px;
+}
+.mail-icone {
+    padding-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 90%;
+        flex-direction: row;
+    }
+    .main div a {
+        flex-direction: row-reverse;
+    }
+    a span:hover {
+        text-decoration: underline;
+    }
+    .textohorizontal {
+        rotate: 0deg;
+    }
+    .instagram-icone {
+        padding: 0 0 0 90px;
+    }
+    .mail-icone {
+        padding: 0 90px 0 0;
+    }
+}
