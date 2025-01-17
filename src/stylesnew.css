@@ -80,6 +80,7 @@ body {
     justify-content: space-around;
     font-size: 0.8rem;
     letter-spacing: 0.5rem;
+    text-transform: uppercase;
 }
 .f-direction-cr {
     flex-direction: column-reverse;
